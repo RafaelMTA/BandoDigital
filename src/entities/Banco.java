@@ -10,7 +10,7 @@ import java.util.Objects;
 public class Banco {
     private final int codigo;
     private final String nome;
-    private final List<Conta> contas;
+    private List<Conta> contas;
 
     public Banco(String nome){
         this.codigo = BancoUtils.gerarNumero();

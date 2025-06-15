@@ -6,8 +6,8 @@ import interfaces.IConta;
 import utils.ContaUtils;
 
 public abstract class Conta implements IConta {
-    protected int agencia;
-    protected int numero;
+    protected final int agencia;
+    protected final int numero;
     protected double saldo;
     protected Cliente cliente;
 
@@ -45,6 +45,6 @@ public abstract class Conta implements IConta {
         System.out.printf("O número da agência é: %s%n", this.agencia);
         System.out.printf("O número da conta é: %s%n", this.numero);
         System.out.printf("O saldo é: %s%n", this.saldo);
-        System.out.printf("O Nome do Cliente é: %s%n", this.cliente.getName());
+        System.out.printf("O Nome do Cliente é: %s%n", this.cliente.name());
     }
 }
