@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public final class Banco {
+public class Banco {
     private final int codigo;
     private final String nome;
     private final List<Conta> contas;

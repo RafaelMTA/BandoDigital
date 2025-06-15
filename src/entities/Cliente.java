@@ -1,6 +1,6 @@
 package entities;
 
-public final class Cliente {
+public class Cliente {
     private final String name;
     private final String cpf;
 
