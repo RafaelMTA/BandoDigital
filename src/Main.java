@@ -37,6 +37,7 @@ public class Main {
         cliente_2_corrente.transferir(100, cliente_1_poupanca);
         cliente_2_corrente.transferir(100, cliente_1_corrente);
 
+        //Seleciona todas as contas do cliente em específico e exibe os extratos
         banco.selecionarContasPorCliente(cliente_1).forEach(Conta::imprimirExtrato);
         banco.selecionarContasPorCliente(cliente_2).forEach(Conta::imprimirExtrato);
     }
